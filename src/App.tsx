@@ -1,9 +1,13 @@
-import './App.css'
+import "./App.css";
+import Header from "./components/Header/Header";
+import AppLayout from "./components/ui/AppLayout";
 
 function App() {
   return (
-   <h1 className='text-4xl text-amber-400 font-bold underline'>Charan tailwind is applied</h1>
-  )
+    <AppLayout>
+      <Header />
+    </AppLayout>
+  );
 }
 
-export default App
+export default App;
