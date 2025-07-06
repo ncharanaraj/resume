@@ -4,13 +4,23 @@ type ButtonProps = {
   children: React.ReactNode;
   variant?: string;
   buttonClass?: string;
+  href?: string;
 };
 
-const Button: React.FC<ButtonProps> = ({ children, variant, buttonClass }) => {
+const Button: React.FC<ButtonProps> = ({
+  children,
+  variant,
+  buttonClass,
+  href,
+}) => {
   return (
-    <button className={`cursor-pointer text-sm p-2 ${buttonClass} ${variant}`}>
+    <a
+      href={href}
+      target="_blank"
+      className={`cursor-pointer text-sm p-2 ${buttonClass} ${variant}`}
+    >
       {children}
-    </button>
+    </a>
   );
 };
 
