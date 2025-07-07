@@ -2,7 +2,7 @@ import { SunMedium } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between p-4 space-x-4">
+    <nav className="flex items-center justify-between space-x-4">
       <ul className="flex space-x-4">
         <li>
           <a href="#about">About</a>
